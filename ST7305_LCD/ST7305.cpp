@@ -117,6 +117,18 @@ void ST7305::setAddress() {
     writeRegister(0x2B); writeParameter(0x00); writeParameter(0xBF);
     writeRegister(0x2C);
 }
+/*
+void ST7305::setAddress() {
+    writeRegister(0x2A);
+	writeParameter(0x00); 
+	writeParameter(0x9F);
+    writeRegister(0x2B); 
+	writeParameter(0x00); 
+	writeParameter(0x1F);
+    writeRegister(0x2C);
+}
+*/
+
 
 void ST7305::showPicture(const uint8_t* pic) {
     setAddress();
